@@ -9,20 +9,14 @@ export default function Showcase() {
         sx={{
           overflow: "hidden",
           mt: 8,
+          mb: 16,
           background: "black",
         }}
       >
-        <Typography
-          variant={"h2"}
+        <Box
           sx={{
-            color: "white",
-            textAlign: "center",
-            fontFamily: "monospace",
-            fontWeight: 700,
-            letterSpacing: ".3rem",
-            textTransform: "uppercase",
             position: "absolute",
-            top: "40%",
+            top: "45%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             zIndex: 1,
@@ -31,8 +25,24 @@ export default function Showcase() {
             },
           }}
         >
-          IT Team
-        </Typography>
+          <Typography
+            variant={"h2"}
+            component={"h1"}
+            sx={{
+              textAlign: "center",
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              textTransform: "uppercase",
+            }}
+          >
+            IT Team
+          </Typography>
+          <Typography component={"p"} variant={"body2"}>
+            This will be some dummy title about something i do not know about
+          </Typography>
+        </Box>
+
         <Box
           sx={{
             "&:hover": { transform: "scale(1.1)" },
@@ -46,7 +56,7 @@ export default function Showcase() {
             alt={"background-image"}
             style={{
               width: "100%",
-              height: "300px",
+              height: "400px",
               objectFit: "cover",
               position: "relative",
             }}
